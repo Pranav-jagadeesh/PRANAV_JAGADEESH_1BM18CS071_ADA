@@ -1,5 +1,5 @@
 /*Given a sorted array with repeating integers ,u need to find the first occurence ,last occurence and count of a given key in the array .Use only binary search,ur algorithm should run in log n time.if element is not present print -1.*/
-
+//PRANAV_JAGADEESH_1BM18CS071_ADA
 
 #include<iostream>
 using namespace std;
