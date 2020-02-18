@@ -22,7 +22,7 @@ int binary(int k,int first,int last)
      }
      else
      {
-      cout<<"The key element is not fount"<<endl;
+      cout<<"The key element is not found"<<endl;
       return 0;
      }
 }
