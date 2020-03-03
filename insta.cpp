@@ -1,6 +1,8 @@
 //PRANAV_JAGADEESH_1BM18CS071_ADA
 
 #include<iostream>
+#include<time.h>
+
 using namespace std; 
   
 /* Function to sort an array using insertion sort*/
@@ -33,16 +35,20 @@ void printArray(int arr[], int n)
 int main()  
 {  
     int n,i=0; 
-    cout<<"\nEnter size of array";
+    double x;
+    clock_t start,end;
+    cout<<"\nEnter size of array:";
     cin>>n;
     int arr[n];
     cout<<"\nEnter array elements:";
     for(i=0;i<n;i++)
     cin>>arr[i];
-  
+    start=clock();
     insertionSort(arr, n);  
+    end=clock();
     printArray(arr, n);  
-  
+    
+    x=(double)(end-start)/(CLOCKS_PER_SEC);
+    cout<<"\nTime taken:"<<x<<"\n";
     return 0;  
 }  
-  
