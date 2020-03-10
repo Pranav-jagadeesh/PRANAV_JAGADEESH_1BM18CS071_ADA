@@ -24,8 +24,7 @@ void Graph::addEdge(int v, int w)
 { 
 	adj[v].push_back(w); // Add w to v’s list. 
 } 
-
-// This function is a variation of DFSUtil() in https://www.geeksforgeeks.org/archives/18212 
+ 
 bool Graph::isCyclicUtil(int v, bool visited[], bool *recStack) 
 { 
 	if(visited[v] == false) 
@@ -50,7 +49,7 @@ bool Graph::isCyclicUtil(int v, bool visited[], bool *recStack)
 } 
 
 // Returns true if the graph contains a cycle, else false. 
-// This function is a variation of DFS() in https://www.geeksforgeeks.org/archives/18212 
+
 bool Graph::isCyclic() 
 { 
 	// Mark all the vertices as not visited and not part of recursion 
