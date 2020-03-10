@@ -32,8 +32,7 @@ void Graph::addEdge(int u, int v)
 	adj[v].push_back(u); // Add v to w’s list. 
 } 
 
-vector<int> Graph::BFS(int componentNum, int src, 
-									int visited[]) 
+vector<int> Graph::BFS(int componentNum, int src, int visited[]) 
 { 
 	// Mark all the vertices as not visited 
 	// Create a queue for BFS 
