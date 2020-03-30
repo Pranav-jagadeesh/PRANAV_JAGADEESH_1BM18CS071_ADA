@@ -1,4 +1,4 @@
-/* C++ implementation of QuickSort */
+//PRANAV_JAGADEESH_1BM18CS071_ADA
 #include <bits/stdc++.h> 
 #include<time.h>
 using namespace std; 
@@ -78,6 +78,3 @@ int main()
 	cout<<"Time taken = "<<x<<endl;
 	return 0; 
 } 
-
- 
- 
