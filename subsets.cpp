@@ -1,4 +1,4 @@
-//count subsets with 
+// CPP count subsets with 
 // given sum. 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -10,8 +10,8 @@ bool** dp;
 void display(const vector<int>& v) 
 { 
     for (int i = 0; i < v.size(); ++i) 
-        printf("%d ", v[i]); 
-    printf("\n"); 
+        cout<<" "<<v[i]; 
+    cout<<endl; 
 } 
   
 //  recursive function to print  subsets with 
@@ -79,7 +79,7 @@ void printAllSubsets(int arr[], int n, int sum)
                                      : dp[i - 1][j]; 
     if (dp[n-1][sum] == false) 
     { 
-        printf("There are no subsets with sum %d\n", sum); 
+        cout<<"There are no subsets with sum :"<<sum; 
         return; 
     } 
   
